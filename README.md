@@ -1,6 +1,13 @@
-# Overview of My CRM Project
+# Overview
 
-This project is a Customer Relationship Management (CRM) system, developed to manage various aspects of customer interactions and internal tasks. Built using React for the frontend and an Express backend, the system interacts with a MongoDB database, ensuring efficient handling of data and user requests.
+Welcome to the Customer Relationship Management (CRM) project! This system is designed to efficiently manage various aspects of customer interactions and internal tasks. It utilizes React for the frontend and an Express backend, interacting seamlessly with a MongoDB database. Explore the details of this project's objectives, demonstrations, technical design, and user interface in the sections below.
+
+## Table of Contents
+   - [Personal Objectives](#personal-objectives)
+   - [Project Demonstration](#project-demonstration)
+   - [Technical Design](#technical-design)
+   - [User Interface (screenshots)](#user-interface)
+   - [Project Installation Guide](#project-installation-guide)
 
 ## Personal Objectives
 
@@ -31,7 +38,7 @@ The backend handles data processing, API endpoints, and database interactions.
 - **Controllers**: Contain logic for handling requests and interacting with the MongoDB database.
 - **Database Interaction**: Mongoose models are used for interacting with MongoDB collections.
 
-#### Data Flow Example
+Data Flow Example
 1. **User Interaction**: Submission of the contact form in the frontend.
 2. **API Call**: `postApi` from `api.js` sends data to the backend.
 3. **Backend Processing**: Route in `_routes.js` calls the appropriate function in `contact.js`.
@@ -39,7 +46,7 @@ The backend handles data processing, API endpoints, and database interactions.
 5. **Response Handling**: Server response is sent back to the frontend.
 
 <p align="center">
-  <img src="readme_images/data-flow.png" alt="Login Page" width="500">
+  <img src="readme_images/data-flow.svg" alt="Login Page" width="500">
 </p>
 
 ## Summary
@@ -84,7 +91,7 @@ The backend handles data processing, API endpoints, and database interactions.
   <img src="readme_images/documents.png" alt="Email Send Page" width="500" style="border: 2px solid #000;">
 </p>
 
-## React.js Project Installation Guide
+## Installation Guide
 
 ### Getting Started
 
@@ -154,7 +161,3 @@ Ensure these tools are installed:
 (not functional on AWS deployment)
 - **Email**: admin@gmail.com
 - **Password**: admin123
-
-### Support
-
-Contact us for any setup difficulties or questions.
