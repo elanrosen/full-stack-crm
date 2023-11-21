@@ -50,7 +50,7 @@ I've prepared a demonstration for those interested in witnessing the CRM in acti
 
 ### 5. Documents
 <p align="center">
-  <img src="readme_images/documents.png" alt="Email Send Page" width="500">
+  <img src="readme_images/documents.png" alt="Email Send Page" width="500" style="border: 2px solid #000;">
 </p>
 
 ## React.js Project Installation Guide
