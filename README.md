@@ -11,9 +11,13 @@ Welcome to the Customer Relationship Management (CRM) project! This system is de
 
 ## Personal Objectives
 
-**Familiarize with MongoDB:** Gain practical experience in using MongoDB for database operations.
-**Advance Server-Side Programming Skills:** Develop expertise in implementing more complex server functionalities.
-**Advance Server-Side Programming Skills:** Enhance UI Development: Build a user interface that is both functional and visually appealing, leveraging advanced UI design principles.
+## Personal Objectives
+
+**Deepening MongoDB Expertise:** The primary aim of this project for me is to gain hands-on experience and deepen understanding of MongoDB. This involved learning database operations, exploring advanced features, and integrating MongoDB  with the backend.
+
+**Enhancing Server-Side Programming Capabilities:** Another focus of mine with this project is improving my server-side programming skills using Express.js. This included developing complex server functionalities, improving API design, and optimizing server performance.
+
+**Learning UI Libraries:** I tried as best I could to use Chakra-UI and Material-UI whenever possible.
 
 ## Project Demonstration
 
