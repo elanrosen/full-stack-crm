@@ -19,29 +19,19 @@ I've prepared a demonstration for those interested in witnessing the CRM in acti
 
 ### Frontend (React)
 
-#### Key Components
 - **Dashboard Pages**: Serve as the central hub, displaying summaries from various sections like contacts, tasks, and leads.
 - **Contact Management**: Interfaces for managing contact information, including add, view, and edit functionalities.
 - **Task Management**: Allows users to manage tasks, link them to contacts or leads.
 - **Other Features**: Meeting management, call logs, email history, document management, and more.
 
-#### Additional
-- **React.lazy**: Used for component imports to optimize performance and loading times.
-- **State Management**: Utilizes `useState` and `useFormik` for handling form states.
-
 ### Backend (Express with MongoDB)
 The backend handles data processing, API endpoints, and database interactions.
 
-#### Key Components
 - **API Routes**: Defined for CRUD operations on various entities like contacts, tasks, meetings.
 - **Controllers**: Contain logic for handling requests and interacting with the MongoDB database.
 - **Database Interaction**: Mongoose models are used for interacting with MongoDB collections.
 
-#### Additional
-- **Route Protection**: Middleware such as `auth` is used for secure route access.
-- **CRUD Operations**: Robust handling of CRUD operations for different entities.
-
-### Data Flow Example
+## Data Flow Example
 1. **User Interaction**: Submission of the contact form in the frontend.
 2. **API Call**: `postApi` from `api.js` sends data to the backend.
 3. **Backend Processing**: Route in `_routes.js` calls the appropriate function in `contact.js`.
