@@ -15,68 +15,84 @@ I've prepared a demonstration for those interested in witnessing the CRM in acti
 - **Video Demo:** [Watch the Video Demo](https://youtu.be/hs5Pfrr3fOM?si=60yPNClNSrpSBFu1)
 - **AWS Deployment:** [Explore the CRM Demo on AWS](https://main.d3g16lag4ur1pf.amplifyapp.com/auth/sign-in)
 
-## Features
+## Technical Design
 
-### Login Authentication
+### Frontend (React)
+
+#### Key Components
+- **Dashboard Pages**: Serve as the central hub, displaying summaries from various sections like contacts, tasks, and leads.
+- **Contact Management**: Interfaces for managing contact information, including add, view, and edit functionalities.
+- **Task Management**: Allows users to manage tasks, link them to contacts or leads.
+- **Other Features**: Meeting management, call logs, email history, document management, and more.
+
+#### Additional
+- **React.lazy**: Used for component imports to optimize performance and loading times.
+- **State Management**: Utilizes `useState` and `useFormik` for handling form states.
+
+### Backend (Express with MongoDB)
+The backend handles data processing, API endpoints, and database interactions.
+
+#### Key Components
+- **API Routes**: Defined for CRUD operations on various entities like contacts, tasks, meetings.
+- **Controllers**: Contain logic for handling requests and interacting with the MongoDB database.
+- **Database Interaction**: Mongoose models are used for interacting with MongoDB collections.
+
+#### Additional
+- **Route Protection**: Middleware such as `auth` is used for secure route access.
+- **CRUD Operations**: Robust handling of CRUD operations for different entities.
+
+### Data Flow Example
+1. **User Interaction**: Submission of the contact form in the frontend.
+2. **API Call**: `postApi` from `api.js` sends data to the backend.
+3. **Backend Processing**: Route in `_routes.js` calls the appropriate function in `contact.js`.
+4. **Database Operation**: Function in `contact.js` updates the MongoDB database.
+5. **Response Handling**: Server response is sent back to the frontend.
+
+<p align="center">
+  <img src="readme_images/data-flow.png" alt="Login Page" width="500">
+</p>
+
+## Summary
+- **Frontend**: Focused on user experience, built with React.
+- **Backend**: Manages data and business logic, developed using Express and MongoDB.
+- **Security**: JWT tokens for authorization and secure data access.
+
+## User Interface
+### 1. Login
 <p align="center">
   <img src="readme_images/login.png" alt="Login Page" width="500">
 </p>
 
-### Dashboards
-- **Admin and User Dashboards**: Central hubs displaying overviews of activities and metrics.
+
+### 2. Home Page
 <p align="center">
   <img src="readme_images/dashboard.png" alt="Dashboard Page" width="500">
 </p>
 
-### Leads Management
-- **Tracking and Managing Leads**: View, add, and manage potential customers or clients.
-- **Lead Interaction Tracking**: Linking to tasks, meetings, or communication histories.
-
-
-
-### Contacts Management
-- **Contact Information Storage**: Manage details about people or companies in contact with the business.
-- **CRUD Operations**: Integrated with the `leads` collection in the database.
+### 3. Contacts Page
 <p align="center">
   <img src="readme_images/contacts.png" alt="Contacts Page" width="500">
 </p>
+
+### 3.a Add Contact
 <p align="center">
   <img src="readme_images/add_contact.png" alt="Email Send Page" width="500">
 </p>
 
-### Task Management
-- **Task Tracking**: Manage tasks or assignments, with assignment options to contacts or leads.
-
-### Meeting Management
-- **Meeting Organization**: Link meetings to contacts or users, with detailed viewing options.
-
-### Call Logs
-- **Phone Call Records**: Maintain details of phone calls, linked to contacts or leads.
-
-### Email History
-- **Email Communication Tracking**: Store and view sent and received emails, linked to contacts.
-
-### Calendar
-- **Event Scheduling**: Integrates with task and meeting management for upcoming events or tasks.
+### 4. Calendar
 <p align="center">
   <img src="readme_images/calendar.png" alt="Email Send Page" width="500">
 </p>
 
+### 4.a Calendar
 <p align="center">
   <img src="readme_images/add_calendar.png" alt="Email Send Page" width="500">
 </p>
 
-### Document Management
-- **Document Storage**: Manage documents related to contacts or other CRM entities.
+### 5. Documents
 <p align="center">
   <img src="readme_images/documents.png" alt="Email Send Page" width="500" style="border: 2px solid #000;">
 </p>
-
-### Reporting and Analytics
-- **Data Insights**: Aggregate data from various CRM parts to provide reports and analytics.
-
-### User Management
-- **Account and Permission Management**: Create, update, or delete user accounts with role-based access control.
 
 ## React.js Project Installation Guide
 
