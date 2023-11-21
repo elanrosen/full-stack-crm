@@ -6,7 +6,7 @@ Project is very much work in progress. UI is somewhat complete, however function
 
 I've set up a demo for anyone interested in seeing the CRM in action:
 
-Demo Link: [https://your-crm-demo-link.com/](https://your-crm-demo-link.com/)
+Demo Link: [https://main.d3g16lag4ur1pf.amplifyapp.com/auth/sign-in](https://your-crm-demo-link.com/)
 
 **Admin Access:**
 - Username: admin@example.com
