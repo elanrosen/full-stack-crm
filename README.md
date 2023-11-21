@@ -1,9 +1,8 @@
 # Overview of My CRM Project
 
-Project is very much work in progress. UI is somewhat complete, however functionalities are in progress. 
+This project is a Customer Relationship Management (CRM) system, developed to manage various aspects of customer interactions and internal tasks. Built using React for the frontend and an Express backend, the system interacts with a MongoDB database, ensuring efficient handling of data and user requests.
 
-
-## Objectives
+## Personal Objectives
 
 **Familiarize with MongoDB:** Gain practical experience in using MongoDB for database operations.
 **Advance Server-Side Programming Skills:** Develop expertise in implementing more complex server functionalities.
@@ -16,42 +15,68 @@ I've prepared a demonstration for those interested in witnessing the CRM in acti
 - **Video Demo:** [Watch the Video Demo](https://youtu.be/hs5Pfrr3fOM?si=60yPNClNSrpSBFu1)
 - **AWS Deployment:** [Explore the CRM Demo on AWS](https://main.d3g16lag4ur1pf.amplifyapp.com/auth/sign-in)
 
-## User Interface
+## Features
 
-### 1. Login Page
+### Login Authentication
 <p align="center">
   <img src="readme_images/login.png" alt="Login Page" width="500">
 </p>
 
-### 2. Home Page
+### Dashboards
+- **Admin and User Dashboards**: Central hubs displaying overviews of activities and metrics.
 <p align="center">
   <img src="readme_images/dashboard.png" alt="Dashboard Page" width="500">
 </p>
 
-### 3. Contacts Page
+### Leads Management
+- **Tracking and Managing Leads**: View, add, and manage potential customers or clients.
+- **Lead Interaction Tracking**: Linking to tasks, meetings, or communication histories.
+
+
+
+### Contacts Management
+- **Contact Information Storage**: Manage details about people or companies in contact with the business.
+- **CRUD Operations**: Integrated with the `leads` collection in the database.
 <p align="center">
   <img src="readme_images/contacts.png" alt="Contacts Page" width="500">
 </p>
-
-### 3.a Add Contact
 <p align="center">
   <img src="readme_images/add_contact.png" alt="Email Send Page" width="500">
 </p>
 
-### 4. Calendar
+### Task Management
+- **Task Tracking**: Manage tasks or assignments, with assignment options to contacts or leads.
+
+### Meeting Management
+- **Meeting Organization**: Link meetings to contacts or users, with detailed viewing options.
+
+### Call Logs
+- **Phone Call Records**: Maintain details of phone calls, linked to contacts or leads.
+
+### Email History
+- **Email Communication Tracking**: Store and view sent and received emails, linked to contacts.
+
+### Calendar
+- **Event Scheduling**: Integrates with task and meeting management for upcoming events or tasks.
 <p align="center">
   <img src="readme_images/calendar.png" alt="Email Send Page" width="500">
 </p>
 
-### 4.a Calendar
 <p align="center">
   <img src="readme_images/add_calendar.png" alt="Email Send Page" width="500">
 </p>
 
-### 5. Documents
+### Document Management
+- **Document Storage**: Manage documents related to contacts or other CRM entities.
 <p align="center">
   <img src="readme_images/documents.png" alt="Email Send Page" width="500" style="border: 2px solid #000;">
 </p>
+
+### Reporting and Analytics
+- **Data Insights**: Aggregate data from various CRM parts to provide reports and analytics.
+
+### User Management
+- **Account and Permission Management**: Create, update, or delete user accounts with role-based access control.
 
 ## React.js Project Installation Guide
 
