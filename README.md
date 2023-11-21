@@ -53,6 +53,39 @@ Data Flow Example
   <img src="readme_images/data-flow.svg" alt="Login Page" width="500">
 </p>
 
+### Database (MongoDB)
+
+## Database Architecture
+
+### Overview
+
+The CRM system's database is hosted on MongoDB Atlas on M0 Sandbox tier
+
+### Collections
+
+The database comprises several collections, each tailored to a specific aspect of the CRM system:
+
+1. **Contacts:** Stores customer contact information.
+2. **Documents:** Contains document data related to customers and transactions.
+3. **Email Histories:** Tracks the history of emails sent and received.
+4. **Leads:** Manages potential customer or client information.
+5. **Meeting Histories:** Records details of past meetings.
+6. **Phone Calls:** Logs phone call interactions.
+7. **Properties:** Details properties associated with clients or leads.
+8. **Tasks:** Manages tasks and assignments within the CRM.
+9. **Text Messages:** Stores records of text message communications.
+10. **Users:** Handles user account information and credentials.
+
+## Schema Overview
+
+- **User-Centric Design:** The database schema is centered around the `USER` entity, with critical user attributes like username, role, and activity (e.g., `emailsent`). This design enables tracking and managing user-specific activities across various entities such as contacts, leads, and email histories.
+
+- **Activity Tracking:** Entities like `CONTACT`, `LEAD`, and `EMAIL-HISTORY` are structured to capture detailed information pertinent to CRM activities. For example, `CONTACT` includes personal information, `LEAD` encompasses lead-specific details, and `EMAIL-HISTORY` records comprehensive email interaction data.
+
+<p align="center">
+  <img src="readme_images/data-schema.svg" alt="Login Page" width="500">
+</p>
+
 ## Summary
 - **Frontend**: Focused on user experience, built with React.
 - **Backend**: Manages data and business logic, developed using Express and MongoDB.
