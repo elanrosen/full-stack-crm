@@ -5,7 +5,7 @@ import Card from "components/card/Card";
 import { HSeparator } from "components/separator/Separator";
 import Spinner from "components/spinner/Spinner";
 import { constant } from "constant";
-import moment from "moment/moment";
+import moment from "moment";
 import { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { BiLink, BiLogoLinkedin } from "react-icons/bi";

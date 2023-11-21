@@ -15,7 +15,7 @@ import Card from "components/card/Card";
 import { HSeparator } from "components/separator/Separator";
 import Spinner from "components/spinner/Spinner";
 import { constant } from "constant";
-import moment from "moment/moment";
+import moment from "moment";
 import { useEffect, useState } from "react";
 import { BsFillSendFill, BsFillTelephoneFill } from "react-icons/bs";
 import { IoIosArrowBack } from "react-icons/io";

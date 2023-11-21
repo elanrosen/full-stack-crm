@@ -3,7 +3,7 @@ import { AspectRatio, Box, Button, Flex, Grid, GridItem, Heading, Image, Menu, M
 import Card from "components/card/Card";
 import { HSeparator } from "components/separator/Separator";
 import Spinner from "components/spinner/Spinner";
-import moment from "moment/moment";
+import moment from "moment";
 import { useEffect, useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link, useParams } from "react-router-dom";
