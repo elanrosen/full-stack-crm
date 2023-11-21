@@ -55,13 +55,11 @@ Data Flow Example
 
 ### Database (MongoDB)
 
-## Database Architecture
+#### Overview
 
-### Overview
+Locally, I hosted the CRM's database on MongoDB Atlas on M0 Sandbox tier
 
-The CRM system's database is hosted on MongoDB Atlas on M0 Sandbox tier
-
-### Collections
+#### Collections
 
 The database comprises several collections, each tailored to a specific aspect of the CRM system:
 
@@ -76,14 +74,16 @@ The database comprises several collections, each tailored to a specific aspect o
 9. **Text Messages:** Stores records of text message communications.
 10. **Users:** Handles user account information and credentials.
 
-## Schema Overview
+#### Schema Overview
 
 - **User-Centric Design:** The database schema is centered around the `USER` entity, with critical user attributes like username, role, and activity (e.g., `emailsent`). This design enables tracking and managing user-specific activities across various entities such as contacts, leads, and email histories.
 
 - **Activity Tracking:** Entities like `CONTACT`, `LEAD`, and `EMAIL-HISTORY` are structured to capture detailed information pertinent to CRM activities. For example, `CONTACT` includes personal information, `LEAD` encompasses lead-specific details, and `EMAIL-HISTORY` records comprehensive email interaction data.
 
+Pictured below is an example of how the lead, contact, email, and user schema's relate. Many fields are not visualized to reduce space.
+
 <p align="center">
-  <img src="readme_images/data-schema.svg" alt="Login Page" width="500">
+  <img src="readme_images/data-schema.svg" alt="Login Page" width="400">
 </p>
 
 ## Summary
