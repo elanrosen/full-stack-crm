@@ -130,10 +130,6 @@ Pictured below is an example of how the lead, contact, email, and user schema's 
 
 ## Installation Guide
 
-### Getting Started
-
-This guide details the steps to install and run the React.js project from the GitHub repository: real-estate-frontend.
-
 ### Prerequisites
 
 Ensure these tools are installed:
